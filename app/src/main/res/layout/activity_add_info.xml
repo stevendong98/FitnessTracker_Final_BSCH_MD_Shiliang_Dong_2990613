@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".activities.AddInfoActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/main"
+        android:gravity="center_vertical"
+        android:layout_height="60dp">
+        <ImageButton
+            android:id="@+id/backArrow"
+            android:background="@android:color/transparent"
+            android:layout_width="50dp"
+            android:src="@drawable/ic_arrowback"
+            android:layout_margin="15dp"
+            android:layout_height="50dp"></ImageButton>
+
+    </LinearLayout>
+    <LinearLayout
+        android:paddingBottom="10dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:background="@drawable/edittextbg"
+            android:layout_margin="10dp"
+            android:textAlignment="center"
+            android:padding="15dp"
+            android:textSize="22dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="Accurate data here will show accurate results in the applicaiton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></TextView>
+
+        <EditText
+            android:id="@+id/et_infoname"
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:background="@drawable/edittextbg"
+            android:hint="Username"
+            android:layout_height="@dimen/infoField_height"></EditText>
+
+        <EditText
+            android:id="@+id/ed_infoage"
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:background="@drawable/edittextbg"
+            android:hint="Age(Years)"
+            android:padding="10dp"
+            android:layout_height="@dimen/infoField_height"></EditText>
+
+        <EditText
+            android:id="@+id/ed_infoheight"
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:background="@drawable/edittextbg"
+            android:hint="height(Cm)"
+            android:padding="10dp"
+            android:layout_height="@dimen/infoField_height"></EditText>
+
+        <EditText
+            android:id="@+id/ed_infoweight"
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:background="@drawable/edittextbg"
+            android:hint="Weight(kg)"
+            android:padding="10dp"
+            android:layout_height="@dimen/infoField_height"></EditText>
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/ed_infogender"
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:background="@drawable/edittextbg"
+            android:hint="Gender"
+            android:padding="10dp"
+            android:layout_height="@dimen/infoField_height"></androidx.appcompat.widget.AppCompatSpinner>
+
+
+
+        <Button
+            android:id="@+id/info_submitBtn"
+            android:layout_width="match_parent"
+            android:background="@drawable/edittextbg"
+            android:textSize="22sp"
+            android:text="Save Date"
+            android:layout_margin="15dp"
+            android:layout_height="@dimen/infoField_height"></Button>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="infoField_height">60dp</dimen>
+    <dimen name="starbtn_width">70dp</dimen>
+    <dimen name="star_btn_height">70dp</dimen>
+</resources>

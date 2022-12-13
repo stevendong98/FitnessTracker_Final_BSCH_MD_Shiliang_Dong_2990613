@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="50dp"
+    tools:context=".fragments.BadgesFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_margin="15dp"
+        android:background="@drawable/levelbgshape"
+        android:layout_height="60dp"
+        tools:ignore="UselessParent">
+
+        <ImageView
+            android:id="@+id/imageaward"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="8dp"
+            android:layout_alignParentStart="true"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/award"
+            android:contentDescription="TODO"
+            tools:ignore="ContentDescription" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/imageaward"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/yourlevelTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/your_level_text"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/levelNumTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="12dp"
+                    android:layout_weight="1"
+                    android:text="300/360000"
+                    android:textAlignment="textEnd"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <SeekBar
+                android:id="@+id/levelSeekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="15dp"
+                android:indeterminate="false"
+                android:max="360000"
+                android:progress="30000"
+                android:progressDrawable="@drawable/custom_seekbar"
+                android:thumb="@android:color/transparent" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragments.BadgesFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@drawable/levelbgshape"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:padding="5dp"
+                android:layout_height="200dp">
+
+                <LinearLayout
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginStart="10dp"
+                        android:layout_width="wrap_content"
+                        android:text="Daily"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/levelNumDailyTv"
+                        android:layout_width="wrap_content"
+                        android:text="300/12000"
+                        android:textStyle="bold"
+                        android:layout_marginEnd="12dp"
+                        android:textAlignment="textEnd"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:weightSum="3"
+                    android:padding="5dp"
+                    android:layout_height="wrap_content">
+
+
+
+                    <LinearLayout
+                        android:id="@+id/silverDaily"
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:padding="5dp"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/awardbgshape"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:src="@drawable/silver"
+                            android:background="@android:color/transparent"
+                            android:layout_height="wrap_content"></ImageView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:text="4,000"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:layout_height="wrap_content"></TextView>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:text="Steps"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:layout_height="wrap_content"></TextView>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/bronzeDaily"
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:padding="5dp"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/awardbgshape"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:src="@drawable/bronze"
+                            android:background="@android:color/transparent"
+                            android:layout_height="wrap_content"></ImageView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:text="8,000"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:layout_height="wrap_content"></TextView>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:text="Steps"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:layout_height="wrap_content"></TextView>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/golddaily"
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                        android:layout_margin="5dp"
+                        android:orientation="vertical"
+                        android:background="@drawable/awardbgshape"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:src="@drawable/gold"
+                            android:background="@android:color/transparent"
+                            android:layout_height="70dp"></ImageView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:text="12,000"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:layout_height="wrap_content"></TextView>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:text="Steps"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:layout_height="wrap_content"></TextView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@drawable/levelbgshape"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:padding="5dp"
+                android:layout_height="200dp">
+
+                <LinearLayout
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Weekly"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/levelNumWeeklyTv"
+                        android:layout_width="wrap_content"
+                        android:text="300/84000"
+                        android:textStyle="bold"
+                        android:layout_marginEnd="12dp"
+                        android:textAlignment="textEnd"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:weightSum="3"
+                    android:padding="5dp"
+                    android:layout_height="wrap_content">
+
+
+                    <LinearLayout
+                        android:id="@+id/silverWeekly"
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:padding="5dp"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/awardbgshape"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:src="@drawable/silver"
+                            android:background="@android:color/transparent"
+                            android:layout_height="wrap_content"></ImageView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:text="28,000"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:layout_height="wrap_content"></TextView>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:text="Steps"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:layout_height="wrap_content"></TextView>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/bronzeWeekly"
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:padding="5dp"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/awardbgshape"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:src="@drawable/bronze"
+                            android:background="@android:color/transparent"
+                            android:layout_height="wrap_content"></ImageView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:text="56,000"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:layout_height="wrap_content"></TextView>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:text="Steps"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:layout_height="wrap_content"></TextView>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/goldWeekly"
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                        android:layout_margin="5dp"
+                        android:orientation="vertical"
+                        android:background="@drawable/awardbgshape"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:src="@drawable/gold"
+                            android:background="@android:color/transparent"
+                            android:layout_height="70dp"></ImageView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:text="84,000"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:layout_height="wrap_content"></TextView>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:text="Steps"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:layout_height="wrap_content"></TextView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@drawable/levelbgshape"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:padding="5dp"
+                android:layout_height="200dp">
+
+                <LinearLayout
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginStart="10dp"
+                        android:layout_width="wrap_content"
+                        android:text="Monthly"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/levelNumMonthlyTv"
+                        android:layout_width="wrap_content"
+                        android:text="300/360000"
+                        android:textStyle="bold"
+                        android:layout_marginEnd="12dp"
+                        android:textAlignment="textEnd"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:weightSum="3"
+                    android:padding="5dp"
+                    android:layout_height="wrap_content">
+
+
+                    <LinearLayout
+                        android:id="@+id/silverMonthly"
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:padding="5dp"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/awardbgshape"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:src="@drawable/silver"
+                            android:background="@android:color/transparent"
+                            android:layout_height="wrap_content"></ImageView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:text="120,000"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:layout_height="wrap_content"></TextView>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:text="Steps"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:layout_height="wrap_content"></TextView>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/bronzeMonthly"
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:padding="5dp"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/awardbgshape"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:src="@drawable/bronze"
+                            android:background="@android:color/transparent"
+                            android:layout_height="wrap_content"></ImageView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:text="240,000"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:layout_height="wrap_content"></TextView>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:text="Calories"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:layout_height="wrap_content"></TextView>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/goldMonthly"
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                        android:layout_margin="5dp"
+                        android:orientation="vertical"
+                        android:background="@drawable/awardbgshape"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:src="@drawable/gold"
+                            android:background="@android:color/transparent"
+                            android:layout_height="70dp"></ImageView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:text="360,000"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:layout_height="wrap_content"></TextView>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:text="Distance"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:layout_height="wrap_content"></TextView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+
+</LinearLayout>

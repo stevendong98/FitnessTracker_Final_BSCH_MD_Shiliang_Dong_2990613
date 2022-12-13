@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="15dp"
+    app:cardElevation="10dp"
+    android:id="@+id/root_card"
+    app:cardCornerRadius="8dp"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:text="William Shakespeer"
+            android:textAlignment="textEnd"
+            android:visibility="gone"
+            android:textColor="@color/white"
+            android:textSize="18dp"></TextView>
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/date"
+            android:text="dont ever let the courage stop you this is some dummy quote that i could have in my mind right now hope you like it"
+            android:textColor="@color/white"
+            android:textSize="24dp"
+            android:textStyle="bold|italic"></TextView>
+
+        <TextView
+            android:id="@+id/author"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/message"
+            android:text="William Shakespeer"
+            android:textColor="@color/white"
+            android:textSize="18dp"></TextView>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

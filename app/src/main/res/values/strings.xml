@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">FitnessTracker</string>
+    <string name="home_text">Home</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="your_level_text">Your Level: 1</string>
+    <string name="skip_btn">Skip</string>
+    <string name="let_get_started">Get Started</string>
+    <string name="first_slide_desc">First slide discriptioin</string>
+</resources>

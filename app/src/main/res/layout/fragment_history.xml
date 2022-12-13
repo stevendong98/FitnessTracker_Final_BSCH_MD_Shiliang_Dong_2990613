@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/linearLayout"
+    android:padding="15dp"
+    android:orientation="vertical"
+    android:layout_marginTop="50dp"
+    tools:context=".fragments.HistoryFragment">
+
+
+    <TextView
+        android:id="@+id/dummy"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:textSize="28sp"
+        android:textAlignment="center"
+        android:layout_below="@id/recyclerHistory"
+        android:text="For Every 100 Steps You Get A Reward Quote"
+        ></TextView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerHistory"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></androidx.recyclerview.widget.RecyclerView>
+
+
+</LinearLayout>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.SettingsFragment">
+
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:paddingBottom="10dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+
+        <EditText
+            android:id="@+id/userField"
+            android:layout_width="match_parent"
+            android:layout_margin="15dp"
+            android:text="Username"
+            android:layout_height="50dp"></EditText>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/gender"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:paddingStart="15dp"
+                android:paddingTop="15dp"
+                android:text="Gender"
+                android:textSize="22sp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/genderval"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_toEndOf="@id/gender"
+                android:paddingStart="15dp"
+                android:paddingTop="15dp"
+                android:text="Male"
+                android:textAlignment="center"
+                android:textSize="22sp"
+                android:textStyle="bold"></TextView>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/weight"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:paddingStart="15dp"
+                android:paddingTop="15dp"
+                android:text="Weight"
+                android:textSize="22sp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/weightval"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_toEndOf="@id/weight"
+                android:paddingStart="15dp"
+                android:paddingTop="15dp"
+                android:text="56"
+                android:textAlignment="center"
+                android:textSize="22sp"
+                android:textStyle="bold"></TextView>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/age"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:paddingStart="15dp"
+                android:paddingTop="15dp"
+                android:text="Saved Age"
+                android:textSize="22sp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/ageval"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_toEndOf="@id/age"
+                android:paddingStart="15dp"
+                android:paddingTop="15dp"
+                android:text="99"
+                android:textAlignment="center"
+                android:textSize="22sp"
+                android:textStyle="bold"></TextView>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/height"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:paddingStart="15dp"
+                android:paddingTop="15dp"
+                android:text="Saved Height"
+                android:textSize="22sp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/heightval"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_toEndOf="@id/height"
+                android:paddingStart="15dp"
+                android:paddingTop="15dp"
+                android:text="99"
+                android:textAlignment="center"
+                android:textSize="22sp"
+                android:textStyle="bold"></TextView>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/numbers3"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:paddingStart="15dp"
+                android:paddingTop="15dp"
+                android:text="Badges Earned Today"
+                android:textSize="22sp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/numbersthree"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:textAlignment="center"
+                android:layout_toEndOf="@id/numbers3"
+                android:paddingStart="15dp"
+                android:paddingTop="15dp"
+                android:text="99"
+                android:textSize="22sp"
+                android:textStyle="bold"></TextView>
+
+        </RelativeLayout>
+
+        <Spinner
+            android:layout_margin="15dp"
+            android:id="@+id/distanceSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"></Spinner>
+
+        <Button
+            android:id="@+id/addInfoBtn"
+            android:layout_width="match_parent"
+            android:background="@drawable/edittextbg"
+            android:textSize="22sp"
+            android:text="Add Info"
+            android:layout_margin="15dp"
+            android:layout_height="@dimen/infoField_height"></Button>
+
+        <Button
+            android:id="@+id/logoutBtn"
+            android:layout_width="match_parent"
+            android:background="@drawable/edittextbg"
+            android:textSize="22sp"
+            android:text="Logout"
+            android:layout_margin="15dp"
+            android:layout_height="@dimen/infoField_height"></Button>
+
+    </LinearLayout>
+
+</RelativeLayout>
